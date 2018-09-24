@@ -1,7 +1,5 @@
 from requests.exceptions import ConnectionError
-from simple_salesforce.exceptions import (
-    SalesforceExpiredSession
-)
+from simple_salesforce.exceptions import SalesforceExpiredSession
 
 from flask_simple_salesforce.api import SingletonSalesforce
 
