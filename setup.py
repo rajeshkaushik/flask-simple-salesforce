@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='flask-simple-salesforce',
-    version='0.1dev',
+    version='0.1',
     author='Rajesh Kaushik',
     author_email='rajesh.kaushik15@gmail.com',
     packages=['flask_simple_salesforce',],
@@ -12,12 +12,12 @@ setup(
 #    long_description=textwrap.dedent(open('README.rst', 'r').read()),
 
     install_requires=[
-        'simple-salesforce>=0.74.2',
-        'flask>=0.11.0',
-        'zeep'
+        'simple-salesforce==0.74.2',
+        'flask==1.0.2',
+        'zeep==3.1.0'
     ],
     tests_require=[
-        'pytest>=3.6.3',
+        'pytest==3.6.3',
     ],
 #    test_suite = 'nose.collector',
 
