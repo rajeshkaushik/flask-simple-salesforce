@@ -1,0 +1,25 @@
+*~
+__pycache__
+*.pyc
+dist/
+*.ini
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+.pytest_cache/
+
+# Other stuff
+*.log
+.vscode/

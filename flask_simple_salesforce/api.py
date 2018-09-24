@@ -5,8 +5,6 @@ from zeep.transports import Transport
 
 from flask import current_app
 
-from .exceptions import exception_handler
-
 
 def get_sf_object():
     sf_obj = Salesforce(
@@ -20,7 +18,6 @@ def get_sf_object():
 
 class SingletonSalesforce:
 
-    @exception_handler
     def __new__(cls):
         if not hasattr(cls, '_instance'):
             sf_obj = get_sf_object()
